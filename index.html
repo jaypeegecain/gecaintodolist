@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="starfield" id="starfield"></div>
+        <div class="planet" id="planet">🌍</div>
+        <div class="todo-app">
+            <h1>🚀 To Do List 👨‍🚀 </h1>
+            
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Add a new task..."
+                    class="task-input"
+                >
+                <button id="addBtn" class="add-btn">+ Add</button>
+            </div>
+
+            <div class="task-section-header">📋 Task List</div>
+
+            <ul id="taskList" class="task-list"></ul>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-label">Completed:</span>
+                    <span class="stat-value" id="completedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Uncompleted:</span>
+                    <span class="stat-value" id="uncompletedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="totalCount">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
